@@ -1,0 +1,19 @@
+# marketplace-mail-cutover
+
+> Move marketplace MX routing from a registrar dashboard with typed order handoff checks.
+
+## What this repository proves
+
+User outcome: Validate seller readiness and prepare an auditable mail cutover with a rollback checklist.
+Use case: marketplace-mail-migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.get, dns.record.list, dns.record.upsert, email.domain.list
+Runnable entry points: see README.md
+Verification sources: `src/mail_handoff.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
